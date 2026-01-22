@@ -39,9 +39,6 @@
 
 ## 📋 Overview
 
-**Cyberpunk 3D Portfolio** is a **visually immersive Three.js-based environment** showcasing personal projects and professional work inside a **futuristic cyberpunk city**.  
-The portfolio merges **3D design, real-time interactivity, and motion animation**, bringing the viewer into a glowing, animated scene that responds to user interaction.
-
 This project demonstrates expertise in:
 - **3D Modeling (Blender)**
 - **Lighting & Texture Baking**
@@ -56,7 +53,7 @@ This project demonstrates expertise in:
 ## 🎨 Design & Modeling in Blender
 
 The design process started inside **Blender**, focusing on:
-- A **floating cyberpunk island** layout with layered geometry.
+- A **floating Bungalow** layout with layered geometry.
 - **Custom neon signs**, glowing panels, and emissive materials.
 - Careful **composition and scale** for camera movement and storytelling.
 - **Low-poly optimization** to ensure smooth web performance.
@@ -110,6 +107,7 @@ Tests run automatically on GitHub Actions for continuous integration.
 ---
 
 ## ⚙️ Technology Stack
+
 - **JavaScript** 
 
 - **Three.js** — 3D rendering and scene graph
@@ -177,31 +175,3 @@ Tests run automatically on GitHub Actions for continuous integration.
 <div style="display: flex; gap: 10px;">
   <img src="public/contact.png" alt="Auth 1" width="800"/>
 </div>
-
----
-
-## 💡 Getting Started
-
-#### Prerequisites
-
-Node.js v16+ (or your target version)
-
-three.js
-
-
-### Installation
-
-#### 1. Clone the Repository
-```bash
-git clone https://github.com/Kfir989/Cyberpunk-Portfolio.git
-cd Cyberpunk-Portfolio
-npm install
-````
-
-#### 2. Run development server
-````
-npm run dev
-
-````
-
----
