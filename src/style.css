@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Segoe UI", Roboto, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.9);
+  background: #0d0d0d;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#experience {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#exp-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;           
+}
+
+.aboutme .intro {
+  margin: 1.5rem auto 2.5rem;
+  max-width: 700px;
+  font-size: 1.2rem;
+  color: #e0e0e0;
+  line-height: 1.8;
+}
+
+
+.skills-table {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.skills-column {
+  flex: 1 1 300px;
+}
+
+.skills-column ul {
+  list-style: none; 
+  padding: 0;
+}
+
+.skills-column li {
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-left: 30px; 
+}
+
+
+.skills-column li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff6b6b, #f8d800);
+  box-shadow: 0 0 6px rgba(255,255,255,0.5);
+}
+
+
+.skill-name {
+  font-size: 1.1rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+
+.skill-bar {
+  margin-top: 6px;
+  width: 100%;
+  height: 10px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.skill-bar .fill {
+  height: 100%;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  border-radius: 5px;
+  transition: width 0.6s ease;
+}
+
+.page {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(90%, 800px);
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, rgba(36,36,36,0.95) 0%, rgba(58,58,58,0.95) 100%);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  text-align: center;
+  z-index: 999;
+  display: none;
+  opacity: 0.95;
+}
+
+.page h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.page h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #a2d2ff;
+}
+
+.page p {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: #e0e0e0;
+}
+
+.exit-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 2px solid rgba(255,255,255,0.3);
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1;
+  padding: 6px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.exit-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1);
+}
+
+@media (max-height: 700px), (max-width: 600px) {
+  .page {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    margin: 2rem auto;
+    height: auto;
+    overflow-y: auto;
+    max-height: 90vh;
+  }
+}
+
+/* --- Intro alert overlay --- */
+#intro-alert {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+/* --- Alert box --- */
+.alert-box {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem 3rem;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.4);
+  font-family: 'Orbitron', sans-serif; /* Cyberpunk-styled font */
+  color: #00ffff;
+  border: 2px solid #00ffff;
+  animation: neonPulse 2s infinite alternate;
+}
+
+/* --- Header --- */
+.alert-box h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+/* --- Text --- */
+.alert-box p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #00bcd4;
+}
+
+/* --- OK button --- */
+#alert-ok {
+  background: #00ffff;
+  border: none;
+  color: #0d0d0d;
+  padding: 0.6rem 1.5rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 10px #00ffff;
+  transition: all 0.2s ease;
+}
+
+#alert-ok:hover {
+  background: #00bcd4;
+  box-shadow: 0 0 20px #00ffff;
+}
+
+/* --- Animations --- 
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes neonPulse {
+  from { box-shadow: 0 0 15px #00ffff, 0 0 30px #00ffff; }
+  to { box-shadow: 0 0 5px #00bcd4, 0 0 15px #00bcd4; }
+}*/

@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8" />
+      <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Alok's Portfolio</title>
+    </head>
+
+    <body>
+      <div id="intro-alert">
+        <div class="alert-box">
+          <h2>⚠ Attention!</h2>
+          <p>
+            You can interact with different objects in this 3D site.
+            <br />
+            Tap or click around to explore the immersive experience!
+          </p>
+          <button id="alert-ok">OK</button>
+        </div>
+      </div>
+
+      <div id="experience">
+        <canvas id="exp-canvas" class="exp-canvas"></canvas>
+      </div>
+
+      <div class="aboutme page" style="display:none">
+        <button class="exit-btn">✕</button>
+        <h1>About Me</h1>
+
+        <p class="intro">
+          Hey, I'm Alok Verma. I build things for the web—clean, functional, and with purpose. I'm all about exploring the latest tech, creating solutions that actually matter, and constantly pushing myself to learn and ship real work. Whether it's diving into new frameworks or crafting experiences that feel right, I'm driven by the idea that good design and good code go hand in hand. Less talk, more build.
+        </p>
+
+        <div class="skills-table">
+          <div class="skills-column">
+            <ul>
+              <li>
+                <span class="skill-name">JavaScript</span>
+                <div class="skill-bar">
+                  <div class="fill" style="width: 70%"></div>
+                </div>
+              </li>
+              <li>
+                <span class="skill-name">React</span>
+                <div class="skill-bar">
+                  <div class="fill" style="width: 75%"></div>
+                </div>
+              </li>
+              <li>
+                <span class="skill-name">Node.js</span>
+                <div class="skill-bar">
+                  <div class="fill" style="width: 70%"></div>
+                </div>
+              </li>
+              <li>
+                <span class="skill-name">NoSQL</span>
+                <div class="skill-bar">
+                  <div class="fill" style="width: 80%"></div>
+                </div>
+              </li>
+              <li>
+                <span class="skill-name">Git</span>
+                <div class="skill-bar">
+                  <div class="fill" style="width: 90%"></div>
+                </div>
+              </li>
+              <li>
+                <span class="skill-name">Postman</span>
+                <div class="skill-bar">
+                  <div class="fill" style="width: 93%"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skills-column">
+            <ul>
+              <li>
+                <span class="skill-name">Next</span>
+                <div class="skill-bar">
+                  <div class="fill" style="width: 85%"></div>
+                </div>
+              </li>
+              <li>
+                <span class="skill-name">Express</span>
+                <div class="skill-bar">
+                  <div class="fill" style="width: 85%"></div>
+                </div>
+              </li>
+              <li>
+                <span class="skill-name">Python</span>
+                <div class="skill-bar">
+                  <div class="fill" style="width: 70%"></div>
+                </div>
+              </li>
+              <li>
+                <span class="skill-name">GSAP</span>
+                <div class="skill-bar">
+                  <div class="fill" style="width: 60%"></div>
+                </div>
+              </li>
+              <li>
+                <span class="skill-name">Tailwind CSS</span>
+                <div class="skill-bar">
+                  <div class="fill" style="width: 80%"></div>
+                </div>
+              </li>
+              <li>
+                <span class="skill-name">Three.js</span>
+                <div class="skill-bar">
+                  <div class="fill" style="width: 90%"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <script type="module" src="/src/main.js"></script>
+    </body>
+  </html>
