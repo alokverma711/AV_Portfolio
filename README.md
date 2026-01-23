@@ -1,7 +1,5 @@
 
-<p align="center">
-  <img src="public/banner.png" alt="Project Banner" width="1100">
-</p>
+
 
 ## 
 
